@@ -201,3 +201,62 @@ nav strong a {
     color: #38bdf8;
     padding: 10px 0;
 }
+
+.lifecycle {
+    display: flex;
+    align-items: stretch;
+    gap: 12px;
+    margin-top: 40px;
+    overflow-x: auto;
+    padding-bottom: 15px;
+}
+
+.lifecycle-step {
+    min-width: 190px;
+    flex: 1;
+    border: 1px solid #334155;
+    background: #111827;
+    border-radius: 12px;
+    padding: 22px;
+}
+
+.lifecycle-step span {
+    display: block;
+    color: #38bdf8;
+    font-size: 0.85rem;
+    margin-bottom: 12px;
+}
+
+.lifecycle-step strong {
+    display: block;
+    font-size: 1.1rem;
+    margin-bottom: 12px;
+}
+
+.lifecycle-step p {
+    color: #94a3b8;
+    line-height: 1.5;
+    margin-bottom: 0;
+}
+
+.lifecycle-arrow {
+    display: flex;
+    align-items: center;
+    color: #38bdf8;
+    font-size: 1.5rem;
+}
+
+.freeze-step {
+    border-color: #38bdf8;
+}
+
+@media (max-width: 900px) {
+    .lifecycle {
+        flex-direction: column;
+    }
+
+    .lifecycle-arrow {
+        justify-content: center;
+        transform: rotate(90deg);
+    }
+}
