@@ -1,7 +1,3 @@
-/* =========================================================
-   BASE
-   ========================================================= */
-
 :root {
     --background: #0f172a;
     --surface: #111827;
@@ -13,6 +9,11 @@
 
     --border: #334155;
     --accent: #38bdf8;
+
+    --green: #4ade80;
+    --yellow: #facc15;
+    --red: #f87171;
+    --purple: #c084fc;
 }
 
 
@@ -28,6 +29,7 @@ html {
 
 body {
     margin: 0;
+
     font-family:
         Arial,
         Helvetica,
@@ -46,14 +48,13 @@ body {
 }
 
 
-/* =========================================================
-   NAVIGATION
-   ========================================================= */
+/* NAVIGATION */
 
 nav {
     display: flex;
     justify-content: space-between;
     align-items: center;
+
     padding: 26px 0;
 }
 
@@ -66,7 +67,9 @@ nav strong {
 nav a {
     color: var(--text-secondary);
     text-decoration: none;
+
     margin-left: 24px;
+
     transition: color 0.2s ease;
 }
 
@@ -79,6 +82,7 @@ nav a:hover {
 nav strong a {
     color: var(--text-primary);
     text-decoration: none;
+
     margin-left: 0;
 }
 
@@ -89,9 +93,7 @@ nav strong a {
 }
 
 
-/* =========================================================
-   HOMEPAGE HERO
-   ========================================================= */
+/* HOMEPAGE HERO */
 
 .hero {
     min-height: 75vh;
@@ -105,6 +107,7 @@ nav strong a {
 .hero h1 {
     font-size: clamp(3rem, 8vw, 6rem);
     line-height: 1;
+
     margin: 0;
 }
 
@@ -112,25 +115,28 @@ nav strong a {
 .hero h2 {
     font-size: 1.5rem;
     font-weight: 500;
+
     color: var(--text-muted);
+
     margin-top: 18px;
 }
 
 
 .hero p {
     max-width: 720px;
+
     font-size: 1.2rem;
     line-height: 1.7;
+
     color: var(--text-secondary);
 }
 
 
-/* =========================================================
-   GENERAL TYPOGRAPHY
-   ========================================================= */
+/* GENERAL */
 
 .accent {
     color: var(--accent);
+
     font-size: 0.92rem;
     letter-spacing: 0.02em;
 }
@@ -144,6 +150,7 @@ nav strong a {
 .section h2 {
     font-size: clamp(2rem, 4vw, 2.6rem);
     line-height: 1.15;
+
     margin-top: 12px;
     margin-bottom: 26px;
 }
@@ -151,8 +158,11 @@ nav strong a {
 
 .section-intro {
     max-width: 900px;
+
     line-height: 1.7;
+
     color: var(--text-secondary);
+
     font-size: 1.05rem;
 }
 
@@ -162,14 +172,15 @@ nav strong a {
 }
 
 
-/* =========================================================
-   HOMEPAGE PROJECT CARD
-   ========================================================= */
+/* HOMEPAGE PROJECT */
 
 .project-card {
     border: 1px solid var(--border);
+
     background: var(--surface);
+
     border-radius: 14px;
+
     padding: 32px;
     margin-top: 24px;
 
@@ -181,18 +192,21 @@ nav strong a {
 
 .project-card:hover {
     transform: translateY(-2px);
+
     border-color: #475569;
 }
 
 
 .project-card h3 {
     font-size: 1.6rem;
+
     margin-top: 0;
 }
 
 
 .tags {
     color: var(--accent);
+
     font-size: 0.95rem;
 }
 
@@ -203,7 +217,9 @@ nav strong a {
     margin-top: 16px;
 
     color: var(--accent);
+
     font-weight: 600;
+
     text-decoration: none;
 }
 
@@ -213,18 +229,18 @@ nav strong a {
 }
 
 
-/* =========================================================
-   CASE STUDY HERO
-   ========================================================= */
+/* CASE STUDY HERO */
 
 .project-hero {
     padding: 105px 0 65px;
+
     max-width: 950px;
 }
 
 
 .project-hero h1 {
     font-size: clamp(2.8rem, 6vw, 4.8rem);
+
     line-height: 1.05;
 
     margin: 20px 0 26px;
@@ -233,6 +249,7 @@ nav strong a {
 
 .lead {
     font-size: 1.3rem;
+
     line-height: 1.7;
 
     color: var(--text-secondary);
@@ -258,12 +275,11 @@ nav strong a {
 }
 
 
-/* =========================================================
-   FEATURE CARDS
-   ========================================================= */
+/* FEATURE CARDS */
 
 .feature-grid {
     display: grid;
+
     grid-template-columns: repeat(2, 1fr);
 
     gap: 20px;
@@ -289,6 +305,7 @@ nav strong a {
 
 .feature-card:hover {
     transform: translateY(-2px);
+
     border-color: #475569;
 }
 
@@ -310,9 +327,7 @@ nav strong a {
 }
 
 
-/* =========================================================
-   RESEARCH ARCHITECTURE
-   ========================================================= */
+/* ARCHITECTURE */
 
 .architecture {
     max-width: 780px;
@@ -359,9 +374,7 @@ nav strong a {
 }
 
 
-/* =========================================================
-   EXPERIMENT LIFECYCLE
-   ========================================================= */
+/* LIFECYCLE */
 
 .lifecycle {
     display: grid;
@@ -445,9 +458,7 @@ nav strong a {
 }
 
 
-/* =========================================================
-   RESEARCH ARTIFACTS
-   ========================================================= */
+/* ARTIFACT GRID */
 
 .artifact-grid {
     display: grid;
@@ -477,32 +488,21 @@ nav strong a {
 
 .artifact-card:hover {
     transform: translateY(-2px);
+
     border-color: #475569;
 }
 
 
 .artifact-preview {
-    min-height: 170px;
+    min-height: 285px;
 
-    display: flex;
-
-    align-items: center;
-    justify-content: center;
+    padding: 16px;
 
     border-bottom: 1px solid var(--border);
 
-    background: var(--background);
-}
+    background: #0b1324;
 
-
-.artifact-preview span {
-    color: var(--accent);
-
-    font-size: 1rem;
-
-    font-weight: 700;
-
-    letter-spacing: 0.14em;
+    overflow: hidden;
 }
 
 
@@ -513,7 +513,7 @@ nav strong a {
 }
 
 
-.artifact-card p {
+.artifact-card > p {
     margin: 0 24px 20px;
 
     color: var(--text-muted);
@@ -533,9 +533,356 @@ nav strong a {
 }
 
 
-/* =========================================================
-   PROJECT EVOLUTION
-   ========================================================= */
+.artifact-disclosure {
+    max-width: 850px;
+
+    margin: 30px 0 0;
+
+    padding-left: 18px;
+
+    border-left: 2px solid var(--border);
+
+    color: var(--text-muted);
+
+    font-size: 0.9rem;
+
+    line-height: 1.6;
+}
+
+
+/* ARTIFACT PREVIEW HEADER */
+
+.preview-header {
+    display: flex;
+
+    align-items: center;
+    justify-content: space-between;
+
+    gap: 10px;
+
+    padding-bottom: 12px;
+
+    margin-bottom: 15px;
+
+    border-bottom: 1px solid var(--border);
+
+    color: var(--text-muted);
+
+    font-family:
+        "Courier New",
+        monospace;
+
+    font-size: 0.72rem;
+}
+
+
+.preview-badge {
+    border: 1px solid var(--accent);
+
+    border-radius: 999px;
+
+    padding: 3px 7px;
+
+    color: var(--accent);
+
+    font-family:
+        Arial,
+        Helvetica,
+        sans-serif;
+
+    font-size: 0.62rem;
+
+    font-weight: 700;
+
+    letter-spacing: 0.06em;
+}
+
+
+/* CODE PREVIEW */
+
+.code-window {
+    font-family:
+        "Courier New",
+        monospace;
+
+    font-size: 0.72rem;
+
+    line-height: 1.65;
+
+    color: var(--text-secondary);
+}
+
+
+.code-window .indent {
+    padding-left: 16px;
+}
+
+
+.code-purple {
+    color: var(--purple);
+}
+
+
+.code-blue {
+    color: var(--accent);
+}
+
+
+.code-pass {
+    color: var(--green);
+}
+
+
+/* MINI EXPERIMENT TABLE */
+
+.mini-table {
+    width: 100%;
+
+    border-collapse: collapse;
+
+    font-size: 0.72rem;
+}
+
+
+.mini-table th,
+.mini-table td {
+    padding: 8px 5px;
+
+    text-align: left;
+
+    border-bottom: 1px solid rgba(51, 65, 85, 0.65);
+}
+
+
+.mini-table th {
+    color: var(--text-muted);
+
+    font-weight: 500;
+}
+
+
+.mini-table td {
+    color: var(--text-secondary);
+}
+
+
+.mini-pass {
+    color: var(--green) !important;
+
+    font-weight: 700;
+}
+
+
+.mini-review {
+    color: var(--yellow) !important;
+}
+
+
+.mini-reject {
+    color: var(--text-muted) !important;
+}
+
+
+.preview-footer {
+    margin-top: 15px;
+
+    color: var(--text-muted);
+
+    font-size: 0.66rem;
+
+    line-height: 1.4;
+}
+
+
+/* VALIDATION PREVIEW */
+
+.validation-panel {
+    display: grid;
+
+    gap: 2px;
+}
+
+
+.validation-row {
+    display: flex;
+
+    justify-content: space-between;
+
+    gap: 10px;
+
+    padding: 7px 0;
+
+    border-bottom: 1px solid rgba(51, 65, 85, 0.45);
+
+    color: var(--text-muted);
+
+    font-size: 0.72rem;
+}
+
+
+.validation-row strong {
+    color: var(--green);
+
+    font-size: 0.68rem;
+}
+
+
+.validation-status {
+    margin-top: 17px;
+
+    padding: 9px;
+
+    border: 1px solid rgba(74, 222, 128, 0.45);
+
+    border-radius: 6px;
+
+    color: var(--green);
+
+    text-align: center;
+
+    font-size: 0.67rem;
+
+    font-weight: 700;
+
+    letter-spacing: 0.04em;
+}
+
+
+/* STRESS PREVIEW */
+
+.stress-panel {
+    display: grid;
+
+    gap: 16px;
+}
+
+
+.stress-label {
+    display: flex;
+
+    justify-content: space-between;
+
+    margin-bottom: 5px;
+
+    color: var(--text-muted);
+
+    font-size: 0.68rem;
+}
+
+
+.stress-label strong {
+    color: var(--text-secondary);
+}
+
+
+.stress-track {
+    width: 100%;
+
+    height: 7px;
+
+    overflow: hidden;
+
+    border-radius: 999px;
+
+    background: #1e293b;
+}
+
+
+.stress-fill {
+    height: 100%;
+
+    border-radius: 999px;
+
+    background: var(--accent);
+}
+
+
+.stress-100 {
+    width: 100%;
+}
+
+
+.stress-94 {
+    width: 94%;
+}
+
+
+.stress-78 {
+    width: 78%;
+}
+
+
+.stress-72 {
+    width: 72%;
+}
+
+
+/* RELEASE PREVIEW */
+
+.release-tree {
+    margin: 0;
+
+    color: var(--text-secondary);
+
+    font-family:
+        "Courier New",
+        monospace;
+
+    font-size: 0.68rem;
+
+    line-height: 1.55;
+
+    white-space: pre-wrap;
+}
+
+
+.release-checks {
+    display: grid;
+
+    grid-template-columns: 1fr 1fr;
+
+    gap: 6px;
+
+    margin-top: 15px;
+
+    padding-top: 12px;
+
+    border-top: 1px solid var(--border);
+}
+
+
+.release-checks span {
+    color: var(--green);
+
+    font-size: 0.62rem;
+}
+
+
+/* HANDOFF PREVIEW */
+
+.handoff-preview h4 {
+    margin: 10px 0 3px;
+
+    color: var(--accent);
+
+    font-size: 0.62rem;
+
+    letter-spacing: 0.08em;
+}
+
+
+.handoff-preview p {
+    margin: 0;
+
+    color: var(--text-muted);
+
+    font-size: 0.7rem;
+
+    line-height: 1.45;
+}
+
+
+/* EVOLUTION */
 
 .evolution-list {
     margin-top: 44px;
@@ -604,9 +951,7 @@ nav strong a {
 }
 
 
-/* =========================================================
-   SCALE AND SCOPE
-   ========================================================= */
+/* METRICS */
 
 .metrics-grid {
     display: grid;
@@ -650,9 +995,7 @@ nav strong a {
 }
 
 
-/* =========================================================
-   ROLE AND TECHNICAL STACK
-   ========================================================= */
+/* ROLE */
 
 .role-grid {
     display: grid;
@@ -684,7 +1027,6 @@ nav strong a {
     letter-spacing: 0.08em;
 
     margin-top: 0;
-
     margin-bottom: 20px;
 }
 
@@ -742,9 +1084,7 @@ nav strong a {
 }
 
 
-/* =========================================================
-   LESSONS
-   ========================================================= */
+/* LESSONS */
 
 .lessons-grid {
     display: grid;
@@ -784,44 +1124,7 @@ nav strong a {
 }
 
 
-/* =========================================================
-   OPTIONAL PIPELINE CLASS
-   ========================================================= */
-
-.pipeline {
-    display: flex;
-
-    flex-wrap: wrap;
-
-    gap: 12px;
-
-    align-items: center;
-
-    margin-top: 30px;
-
-    line-height: 1.8;
-}
-
-
-.pipeline span {
-    padding: 10px 14px;
-
-    border: 1px solid var(--border);
-
-    border-radius: 8px;
-}
-
-
-.skills-list {
-    line-height: 2;
-
-    color: var(--text-secondary);
-}
-
-
-/* =========================================================
-   CLOSING SECTION
-   ========================================================= */
+/* CLOSING */
 
 .closing-section {
     padding: 90px 0;
@@ -846,9 +1149,7 @@ nav strong a {
 }
 
 
-/* =========================================================
-   FOOTER
-   ========================================================= */
+/* FOOTER */
 
 footer {
     border-top: 1px solid var(--border);
@@ -859,16 +1160,13 @@ footer {
 }
 
 
-/* =========================================================
-   RESPONSIVE — TABLETS
-   ========================================================= */
+/* RESPONSIVE */
 
 @media (max-width: 1100px) {
 
     .lifecycle {
         grid-template-columns: 1fr;
     }
-
 
     .lifecycle-arrow {
         transform: rotate(90deg);
@@ -879,29 +1177,21 @@ footer {
 }
 
 
-/* =========================================================
-   RESPONSIVE — SMALL SCREENS
-   ========================================================= */
-
 @media (max-width: 900px) {
 
     .artifact-grid,
-    .metrics-grid {
-        grid-template-columns: 1fr;
-    }
-
-
+    .metrics-grid,
     .role-grid,
     .lessons-grid {
         grid-template-columns: 1fr;
     }
 
+    .artifact-preview {
+        min-height: auto;
+    }
+
 }
 
-
-/* =========================================================
-   RESPONSIVE — MOBILE
-   ========================================================= */
 
 @media (max-width: 700px) {
 
@@ -909,13 +1199,11 @@ footer {
         width: min(92%, 1100px);
     }
 
-
     nav {
         align-items: flex-start;
 
         gap: 20px;
     }
-
 
     .nav-links {
         flex-wrap: wrap;
@@ -925,31 +1213,25 @@ footer {
         gap: 10px;
     }
 
-
     nav a {
         margin-left: 12px;
     }
-
 
     .hero {
         min-height: 70vh;
     }
 
-
     .feature-grid {
         grid-template-columns: 1fr;
     }
-
 
     .project-hero {
         padding-top: 75px;
     }
 
-
     .section {
         padding: 62px 0;
     }
-
 
     .evolution-item {
         grid-template-columns: 45px 1fr;
@@ -959,9 +1241,12 @@ footer {
         padding-left: 22px;
     }
 
-
     .architecture-box {
         padding: 20px;
+    }
+
+    .release-checks {
+        grid-template-columns: 1fr;
     }
 
 }
