@@ -1,47 +1,962 @@
-<section class="section">
+<!DOCTYPE html>
+<html lang="en">
 
-    <p class="accent">SCALE & SCOPE</p>
-    <h2>A Long-Running Independent Research Program</h2>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <p>
-        What began as individual experiments developed into an ongoing
-        research-and-engineering program involving repeated hypothesis
-        testing, software development, validation, documentation, and
-        iterative system redesign.
-    </p>
+    <meta
+        name="description"
+        content="John Paulino's AI-assisted market decision research engineering case study."
+    >
 
-    <div class="metrics-grid">
+    <title>AI-Assisted Market Decision Research | John Paulino</title>
 
-        <div class="metric-card">
-            <strong>1+ Year</strong>
-            <span>of continuous independent research and iteration</span>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+
+<body>
+
+<div class="container">
+
+    <!-- NAVIGATION -->
+
+    <nav>
+        <strong>
+            <a href="index.html">John Paulino</a>
+        </strong>
+
+        <div class="nav-links">
+            <a href="index.html#projects">Projects</a>
+            <a href="index.html#about">About</a>
+            <a href="https://github.com/JohnPaulino">GitHub</a>
+        </div>
+    </nav>
+
+
+    <!-- HERO -->
+
+    <section class="project-hero">
+
+        <p class="accent">FLAGSHIP RESEARCH PROJECT</p>
+
+        <h1>AI-Assisted Market Decision Research Platform</h1>
+
+        <p class="lead">
+            A long-running independent engineering and research program
+            exploring AI-assisted experimentation, Python simulation,
+            sequential decision systems, and rigorous evaluation using
+            real-world market data.
+        </p>
+
+        <p class="confidential-note">
+            The specific market instruments, production decision logic,
+            parameters, and proprietary research findings have intentionally
+            been abstracted. This case study focuses on the engineering,
+            experimentation, and evaluation systems developed around the research.
+        </p>
+
+    </section>
+
+
+    <!-- CHALLENGE -->
+
+    <section class="section">
+
+        <p class="accent">THE PROBLEM</p>
+
+        <h2>The Challenge</h2>
+
+        <p class="section-intro">
+            Researching decision systems in noisy real-world environments
+            creates several engineering challenges. Strong apparent results
+            can be caused by overfitting, data leakage, favorable outliers,
+            inconsistent execution assumptions, or accidental changes in
+            experimental methodology.
+        </p>
+
+        <p class="section-intro">
+            I developed a structured research environment designed to turn
+            ambiguous ideas into reproducible experiments while maintaining
+            strict separation between discovery and evaluation.
+        </p>
+
+    </section>
+
+
+    <!-- ARCHITECTURE -->
+
+    <section class="section">
+
+        <p class="accent">SYSTEM DESIGN</p>
+
+        <h2>Research Architecture</h2>
+
+        <p class="section-intro">
+            I designed the research environment as a modular pipeline so that
+            data preparation, experimentation, execution, evaluation, and
+            reporting could evolve independently while remaining reproducible.
+        </p>
+
+
+        <div class="architecture">
+
+            <div class="architecture-box">
+                <strong>Market Data</strong>
+                <span>
+                    Historical and synthetic research inputs
+                </span>
+            </div>
+
+            <div class="architecture-arrow">↓</div>
+
+
+            <div class="architecture-box">
+                <strong>Context &amp; Data Pipeline</strong>
+                <span>
+                    Validation, transformation, and experiment-ready inputs
+                </span>
+            </div>
+
+            <div class="architecture-arrow">↓</div>
+
+
+            <div class="architecture-box">
+                <strong>AI-Assisted Research Layer</strong>
+                <span>
+                    Hypothesis development, implementation, debugging,
+                    and analysis
+                </span>
+            </div>
+
+            <div class="architecture-arrow">↓</div>
+
+
+            <div class="architecture-box">
+                <strong>Decision &amp; Simulation Engine</strong>
+                <span>
+                    Controlled execution of candidate policies and research rules
+                </span>
+            </div>
+
+            <div class="architecture-arrow">↓</div>
+
+
+            <div class="architecture-box">
+                <strong>Evaluation Framework</strong>
+                <span>
+                    Isolated validation, stress testing, and robustness analysis
+                </span>
+            </div>
+
+            <div class="architecture-arrow">↓</div>
+
+
+            <div class="architecture-box">
+                <strong>Research Release</strong>
+                <span>
+                    Frozen configurations, reports, documentation,
+                    and reproducible results
+                </span>
+            </div>
+
         </div>
 
-        <div class="metric-card">
-            <strong>100s</strong>
-            <span>of candidate experiments and research variations explored</span>
+    </section>
+
+
+    <!-- ENGINEERING CHALLENGES -->
+
+    <section class="section">
+
+        <p class="accent">ENGINEERING CHALLENGES</p>
+
+        <h2>Problems I Had to Solve</h2>
+
+        <p class="section-intro">
+            Building the research system required solving problems that extended
+            beyond model or policy performance. Experimental integrity,
+            reproducibility, robustness, and information control became core
+            engineering requirements.
+        </p>
+
+
+        <div class="feature-grid">
+
+            <div class="feature-card">
+                <h3>Preventing Data Leakage</h3>
+
+                <p>
+                    Designed strict separation between discovery and evaluation
+                    environments so later observations could not influence
+                    previously developed candidate systems.
+                </p>
+            </div>
+
+
+            <div class="feature-card">
+                <h3>Reproducible Experiments</h3>
+
+                <p>
+                    Standardized experiment rules, inputs, execution assumptions,
+                    metrics, and versioned configurations so results could be
+                    independently replayed and compared.
+                </p>
+            </div>
+
+
+            <div class="feature-card">
+                <h3>Outlier Dependence</h3>
+
+                <p>
+                    Developed stress tests that remove unusually favorable outcomes
+                    while preserving adverse outcomes to identify systems whose
+                    apparent success depends on rare events.
+                </p>
+            </div>
+
+
+            <div class="feature-card">
+                <h3>AI Research Governance</h3>
+
+                <p>
+                    Defined explicit constraints around what information
+                    AI-assisted workflows could access, how experiments could
+                    be modified, and when candidate configurations had to be frozen.
+                </p>
+            </div>
+
+
+            <div class="feature-card">
+                <h3>Consistent Simulation</h3>
+
+                <p>
+                    Built deterministic execution rules so timing, resource limits,
+                    costs, and outcome calculations remained consistent across
+                    large numbers of experiments.
+                </p>
+            </div>
+
+
+            <div class="feature-card">
+                <h3>Research Handoffs</h3>
+
+                <p>
+                    Created structured documentation, run summaries,
+                    configuration packages, and implementation notes so experiments
+                    could be resumed and audited without relying on informal context.
+                </p>
+            </div>
+
         </div>
 
-        <div class="metric-card">
-            <strong>Multi-Year</strong>
-            <span>historical evaluation across different market environments</span>
+    </section>
+
+
+    <!-- EXPERIMENTAL PROCESS -->
+
+    <section class="section">
+
+        <p class="accent">EXPERIMENTAL PROCESS</p>
+
+        <h2>From Idea to Frozen Evaluation</h2>
+
+        <p class="section-intro">
+            Candidate systems move through a controlled research lifecycle.
+            Development is separated from later evaluation stages so that
+            validation results cannot be used to retroactively improve the
+            system being tested.
+        </p>
+
+
+        <div class="lifecycle">
+
+            <div class="lifecycle-step">
+                <span>01</span>
+                <strong>Research Question</strong>
+
+                <p>
+                    Define the objective, constraints, and evaluation criteria.
+                </p>
+            </div>
+
+
+            <div class="lifecycle-arrow">→</div>
+
+
+            <div class="lifecycle-step">
+                <span>02</span>
+                <strong>Discovery</strong>
+
+                <p>
+                    Develop and test candidate approaches in the permitted
+                    research environment.
+                </p>
+            </div>
+
+
+            <div class="lifecycle-arrow">→</div>
+
+
+            <div class="lifecycle-step freeze-step">
+                <span>03</span>
+                <strong>Freeze</strong>
+
+                <p>
+                    Lock the candidate rules before exposure to evaluation data.
+                </p>
+            </div>
+
+
+            <div class="lifecycle-arrow">→</div>
+
+
+            <div class="lifecycle-step">
+                <span>04</span>
+                <strong>Validation</strong>
+
+                <p>
+                    Replay the frozen system against previously unseen observations.
+                </p>
+            </div>
+
+
+            <div class="lifecycle-arrow">→</div>
+
+
+            <div class="lifecycle-step">
+                <span>05</span>
+                <strong>Stress Test</strong>
+
+                <p>
+                    Evaluate robustness under deliberately adverse assumptions.
+                </p>
+            </div>
+
+
+            <div class="lifecycle-arrow">→</div>
+
+
+            <div class="lifecycle-step">
+                <span>06</span>
+                <strong>Confirmation</strong>
+
+                <p>
+                    Perform final evaluation without modifying the frozen system.
+                </p>
+            </div>
+
         </div>
 
-        <div class="metric-card">
-            <strong>Multiple</strong>
-            <span>isolated discovery, validation, and confirmation environments</span>
+    </section>
+
+
+    <!-- WHAT I BUILT -->
+
+    <section class="section">
+
+        <p class="accent">ENGINEERING OUTPUT</p>
+
+        <h2>What I Built Along the Way</h2>
+
+        <p class="section-intro">
+            The research evolved into a collection of reusable engineering tools,
+            experimental controls, documentation systems, and reproducible
+            workflows rather than a single analysis or model.
+        </p>
+
+
+        <div class="feature-grid">
+
+            <div class="feature-card">
+                <h3>Python Research Tools</h3>
+
+                <p>
+                    Developed scripts for data preparation, simulation,
+                    experiment execution, result aggregation, validation,
+                    and comparative analysis.
+                </p>
+            </div>
+
+
+            <div class="feature-card">
+                <h3>Experiment Runners</h3>
+
+                <p>
+                    Built repeatable workflows for executing large groups of
+                    candidate experiments under standardized assumptions and
+                    evaluation rules.
+                </p>
+            </div>
+
+
+            <div class="feature-card">
+                <h3>Synthetic Research Environments</h3>
+
+                <p>
+                    Created synthetic experimentation environments that allow
+                    ideas to be explored without exposing protected evaluation
+                    datasets during development.
+                </p>
+            </div>
+
+
+            <div class="feature-card">
+                <h3>Validation &amp; Stress Tests</h3>
+
+                <p>
+                    Implemented evaluation tools for chronological replay,
+                    robustness analysis, outlier sensitivity, and
+                    cross-period consistency.
+                </p>
+            </div>
+
+
+            <div class="feature-card">
+                <h3>Versioned Research Packages</h3>
+
+                <p>
+                    Maintained frozen configurations, implementation packages,
+                    run definitions, and reproducible releases as the system
+                    evolved.
+                </p>
+            </div>
+
+
+            <div class="feature-card">
+                <h3>Technical Documentation</h3>
+
+                <p>
+                    Produced research summaries, implementation guides,
+                    methodology notes, handoff packages, experiment tables,
+                    and compact reference documents.
+                </p>
+            </div>
+
         </div>
 
-        <div class="metric-card">
-            <strong>Reusable</strong>
-            <span>Python tools, simulation scripts, and evaluation workflows</span>
+    </section>
+
+
+    <!-- RESEARCH ARTIFACTS -->
+
+    <section class="section">
+
+        <p class="accent">RESEARCH ARTIFACTS</p>
+
+        <h2>Evidence of the Work</h2>
+
+        <p class="section-intro">
+            The project produced reusable code, structured experiment records,
+            validation reports, research packages, and technical documentation.
+            Public examples are sanitized to preserve proprietary market logic.
+        </p>
+
+
+        <div class="artifact-grid">
+
+            <div class="artifact-card">
+
+                <div class="artifact-preview">
+                    <span>PY</span>
+                </div>
+
+                <h3>Python Experiment Runner</h3>
+
+                <p>
+                    Automated execution and comparison of controlled research
+                    configurations using standardized inputs and evaluation rules.
+                </p>
+
+                <span class="artifact-label">
+                    Python · Automation
+                </span>
+
+            </div>
+
+
+            <div class="artifact-card">
+
+                <div class="artifact-preview">
+                    <span>EXP</span>
+                </div>
+
+                <h3>Experiment Comparison Tables</h3>
+
+                <p>
+                    Structured reporting for comparing candidate systems across
+                    discovery, validation, robustness, and confirmation stages.
+                </p>
+
+                <span class="artifact-label">
+                    Analysis · Evaluation
+                </span>
+
+            </div>
+
+
+            <div class="artifact-card">
+
+                <div class="artifact-preview">
+                    <span>VAL</span>
+                </div>
+
+                <h3>Validation Reports</h3>
+
+                <p>
+                    Reproducible out-of-sample evaluation records designed to
+                    separate development performance from later validation.
+                </p>
+
+                <span class="artifact-label">
+                    Validation · Reproducibility
+                </span>
+
+            </div>
+
+
+            <div class="artifact-card">
+
+                <div class="artifact-preview">
+                    <span>STRESS</span>
+                </div>
+
+                <h3>Robustness Analysis</h3>
+
+                <p>
+                    Stress-testing tools designed to expose systems whose apparent
+                    performance depends excessively on unusually favorable outcomes.
+                </p>
+
+                <span class="artifact-label">
+                    Robustness · Research
+                </span>
+
+            </div>
+
+
+            <div class="artifact-card">
+
+                <div class="artifact-preview">
+                    <span>REL</span>
+                </div>
+
+                <h3>Versioned Research Releases</h3>
+
+                <p>
+                    Frozen research packages containing configuration rules,
+                    implementation notes, evaluation state, and reproducibility
+                    instructions.
+                </p>
+
+                <span class="artifact-label">
+                    Versioning · Governance
+                </span>
+
+            </div>
+
+
+            <div class="artifact-card">
+
+                <div class="artifact-preview">
+                    <span>DOC</span>
+                </div>
+
+                <h3>Technical Handoff Packages</h3>
+
+                <p>
+                    Structured summaries, implementation guides, rules,
+                    guardrails, examples, and experiment documentation designed
+                    to allow research to be resumed consistently.
+                </p>
+
+                <span class="artifact-label">
+                    Documentation · Project Management
+                </span>
+
+            </div>
+
         </div>
 
-        <div class="metric-card">
-            <strong>Versioned</strong>
-            <span>research packages, frozen configurations, and technical handoffs</span>
+    </section>
+
+
+    <!-- PROJECT EVOLUTION -->
+
+    <section class="section">
+
+        <p class="accent">PROJECT EVOLUTION</p>
+
+        <h2>How the Research System Matured</h2>
+
+        <p class="section-intro">
+            The project evolved through repeated cycles of experimentation,
+            failure analysis, tooling improvements, and stronger evaluation
+            controls. Several of the most important advances came from identifying
+            weaknesses in earlier versions of the research process.
+        </p>
+
+
+        <div class="evolution-list">
+
+            <div class="evolution-item">
+                <span>01</span>
+
+                <div>
+                    <h3>Manual Exploration</h3>
+
+                    <p>
+                        Began with individual hypotheses, exploratory analysis,
+                        and small research scripts used to understand the
+                        problem space.
+                    </p>
+                </div>
+            </div>
+
+
+            <div class="evolution-item">
+                <span>02</span>
+
+                <div>
+                    <h3>Python Automation</h3>
+
+                    <p>
+                        Converted repeated analytical work into reusable scripts,
+                        automated calculations, and standardized experiment runners.
+                    </p>
+                </div>
+            </div>
+
+
+            <div class="evolution-item">
+                <span>03</span>
+
+                <div>
+                    <h3>Structured Simulation</h3>
+
+                    <p>
+                        Introduced deterministic rules for timing, costs,
+                        resource constraints, and outcome calculations to improve
+                        consistency across experiments.
+                    </p>
+                </div>
+            </div>
+
+
+            <div class="evolution-item">
+                <span>04</span>
+
+                <div>
+                    <h3>Evaluation Redesign</h3>
+
+                    <p>
+                        Strengthened information isolation after identifying how
+                        evaluation leakage could make apparently strong systems
+                        less trustworthy.
+                    </p>
+                </div>
+            </div>
+
+
+            <div class="evolution-item">
+                <span>05</span>
+
+                <div>
+                    <h3>Synthetic Discovery Environment</h3>
+
+                    <p>
+                        Separated idea generation from protected historical
+                        evaluation by introducing dedicated synthetic research
+                        environments for discovery.
+                    </p>
+                </div>
+            </div>
+
+
+            <div class="evolution-item">
+                <span>06</span>
+
+                <div>
+                    <h3>Robustness-First Evaluation</h3>
+
+                    <p>
+                        Expanded evaluation beyond headline averages to measure
+                        sensitivity to rare favorable outcomes and other forms
+                        of performance concentration.
+                    </p>
+                </div>
+            </div>
+
+
+            <div class="evolution-item">
+                <span>07</span>
+
+                <div>
+                    <h3>Versioned Research Releases</h3>
+
+                    <p>
+                        Formalized experiment freezes, implementation packages,
+                        validation records, handoff documentation, and
+                        reproducible research releases.
+                    </p>
+                </div>
+            </div>
+
         </div>
 
-    </div>
+    </section>
 
-</section>
+
+    <!-- SCALE AND SCOPE -->
+
+    <section class="section">
+
+        <p class="accent">SCALE &amp; SCOPE</p>
+
+        <h2>A Long-Running Independent Research Program</h2>
+
+        <p class="section-intro">
+            What began as individual experiments developed into an ongoing
+            research-and-engineering program involving repeated hypothesis
+            testing, software development, validation, documentation, and
+            iterative system redesign.
+        </p>
+
+
+        <div class="metrics-grid">
+
+            <div class="metric-card">
+                <strong>1+ Year</strong>
+                <span>
+                    of continuous independent research and iteration
+                </span>
+            </div>
+
+
+            <div class="metric-card">
+                <strong>100s</strong>
+                <span>
+                    of candidate experiments and research variations explored
+                </span>
+            </div>
+
+
+            <div class="metric-card">
+                <strong>Multi-Year</strong>
+                <span>
+                    historical evaluation across changing market environments
+                </span>
+            </div>
+
+
+            <div class="metric-card">
+                <strong>Isolated</strong>
+                <span>
+                    discovery, validation, and confirmation environments
+                </span>
+            </div>
+
+
+            <div class="metric-card">
+                <strong>Reusable</strong>
+                <span>
+                    Python tools, simulation scripts, and evaluation workflows
+                </span>
+            </div>
+
+
+            <div class="metric-card">
+                <strong>Versioned</strong>
+                <span>
+                    research packages, frozen configurations, and technical handoffs
+                </span>
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- TECHNICAL STACK AND ROLE -->
+
+    <section class="section">
+
+        <p class="accent">TECHNICAL STACK &amp; OWNERSHIP</p>
+
+        <h2>My Role in the System</h2>
+
+        <p class="section-intro">
+            I treated AI as part of the engineering toolchain rather than as
+            a replacement for research ownership. I defined the objectives,
+            constraints, evaluation standards, information boundaries, and
+            iteration process while using AI-assisted workflows to accelerate
+            implementation and analysis.
+        </p>
+
+
+        <div class="role-grid">
+
+            <div class="role-card">
+
+                <p class="role-label">MY RESPONSIBILITIES</p>
+
+                <ul>
+                    <li>Research problem definition</li>
+                    <li>Experiment design and governance</li>
+                    <li>Python implementation and debugging</li>
+                    <li>Simulation architecture</li>
+                    <li>Evaluation methodology</li>
+                    <li>Leakage prevention</li>
+                    <li>Robustness criteria</li>
+                    <li>Experiment review and selection</li>
+                    <li>Research documentation</li>
+                    <li>Version and release management</li>
+                </ul>
+
+            </div>
+
+
+            <div class="role-card">
+
+                <p class="role-label">AI-ASSISTED WORKFLOWS</p>
+
+                <ul>
+                    <li>Hypothesis brainstorming</li>
+                    <li>Code generation and refinement</li>
+                    <li>Debugging support</li>
+                    <li>Experiment automation</li>
+                    <li>Comparative analysis</li>
+                    <li>Documentation generation</li>
+                    <li>Research summaries</li>
+                    <li>Alternative implementation exploration</li>
+                </ul>
+
+            </div>
+
+        </div>
+
+
+        <div class="stack-block">
+
+            <h3>Technical Areas</h3>
+
+            <div class="stack-list">
+                <span>Python</span>
+                <span>AI / LLM Workflows</span>
+                <span>Data Analysis</span>
+                <span>Simulation</span>
+                <span>Time-Series</span>
+                <span>Experiment Design</span>
+                <span>Synthetic Data</span>
+                <span>Validation</span>
+                <span>Research Automation</span>
+                <span>Git / GitHub</span>
+                <span>Reproducibility</span>
+                <span>Technical Documentation</span>
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- KEY LESSONS -->
+
+    <section class="section">
+
+        <p class="accent">RESEARCH TAKEAWAYS</p>
+
+        <h2>Key Lessons</h2>
+
+
+        <div class="lessons-grid">
+
+            <div class="lesson-card">
+
+                <h3>Strong results are not enough.</h3>
+
+                <p>
+                    A system can appear successful while depending on leakage,
+                    unusual outcomes, or assumptions that do not survive
+                    independent evaluation.
+                </p>
+
+            </div>
+
+
+            <div class="lesson-card">
+
+                <h3>Evaluation is an engineering problem.</h3>
+
+                <p>
+                    Information isolation, reproducibility, and standardized
+                    execution became as important as the candidate systems
+                    being evaluated.
+                </p>
+
+            </div>
+
+
+            <div class="lesson-card">
+
+                <h3>AI benefits from explicit constraints.</h3>
+
+                <p>
+                    AI-assisted research became more useful when data access,
+                    experimental permissions, evaluation rules, and stopping
+                    conditions were defined explicitly.
+                </p>
+
+            </div>
+
+
+            <div class="lesson-card">
+
+                <h3>Robustness matters more than headline performance.</h3>
+
+                <p>
+                    The research increasingly prioritized systems that remained
+                    useful after deliberately removing favorable assumptions
+                    and unusually strong outcomes.
+                </p>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- CLOSING -->
+
+    <section class="closing-section">
+
+        <p class="accent">ONGOING WORK</p>
+
+        <h2>Research continues.</h2>
+
+        <p>
+            The production decision system remains private, while the public
+            portfolio documents the engineering practices, tools, and research
+            methodology developed around it.
+        </p>
+
+        <a class="project-link" href="index.html">
+            ← Back to Portfolio
+        </a>
+
+    </section>
+
+
+    <!-- FOOTER -->
+
+    <footer>
+        © 2026 John Paulino
+    </footer>
+
+</div>
+
+</body>
+
+</html>
