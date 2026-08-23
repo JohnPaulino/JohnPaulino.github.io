@@ -318,3 +318,46 @@ nav strong a {
         grid-template-columns: 1fr;
     }
 }
+
+.evolution-list {
+    margin-top: 40px;
+    border-left: 1px solid #334155;
+    margin-left: 20px;
+}
+
+.evolution-item {
+    display: grid;
+    grid-template-columns: 70px 1fr;
+    gap: 20px;
+    padding: 0 0 36px 28px;
+    position: relative;
+}
+
+.evolution-item::before {
+    content: "";
+    position: absolute;
+    left: -6px;
+    top: 6px;
+    width: 11px;
+    height: 11px;
+    border-radius: 50%;
+    background: #38bdf8;
+}
+
+.evolution-item span {
+    color: #38bdf8;
+    font-size: 0.85rem;
+    padding-top: 4px;
+}
+
+.evolution-item h3 {
+    margin: 0 0 8px;
+    font-size: 1.2rem;
+}
+
+.evolution-item p {
+    margin: 0;
+    color: #94a3b8;
+    line-height: 1.6;
+    max-width: 850px;
+}
